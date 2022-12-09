@@ -1,0 +1,8 @@
+def TrianglePS():
+    P = 3 * a
+    S = a ** 2 * ((3 ** 0.5) / 4)
+    return(P, S)
+    
+a = int(input('введите значение стороны равностороннего треугольника: '))
+
+print(TrianglePS())
