@@ -1,2 +1,2 @@
-a = str(input('введите'))
+a = str(input('введите выражение: '))
 print(eval(a))
