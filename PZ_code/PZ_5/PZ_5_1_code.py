@@ -1,7 +1,10 @@
+#С помощью функций получить вертикальну. и горизонтальную линии. Линия проводится многократной печатью
+#символа. Заключить слово в рамку из полученных линий.
+
 def horisontal(l):
     print(' ' + '-' * l + ' ')
     
 def vertical(s):
     print('|' + s + '|')
     
-horisontal(len(s := input('введите слово: '))); vertical(s); horisontal(len(s))
+horisontal(len(s = input('введите слово: '))); vertical(s); horisontal(len(s))
