@@ -5,7 +5,7 @@
 book = {'овощ = морковь': 24, 'мебель': 95,  'стул': 372}
 print(book)
 
-a = ('фрукт = яблоко') in dict.items(book)
+a = ('фрукт = яблоко') in dict.keys(book)
 if a == False:
     book['фрукт = яблоко'] = 45
     print(book)
