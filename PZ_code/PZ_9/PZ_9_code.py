@@ -9,5 +9,3 @@ a = ('фрукт = яблоко') in dict.keys(book)
 if a == False:
     book['фрукт = яблоко'] = 45
     print(book)
-else:
-    print(book)
