@@ -14,7 +14,7 @@ for i in range(n): #заполнение столбцов матрицы
 result = list(map(lambda x: max(x), matrix)) #максимальные значения в каждой строке
 
 presult = []
-for c in result: #фильтрация по кратности на 4
+for c in result: #фильтрация по кратности на 4 и положительности
     if c % 4 == 0 and c > 0:
         presult.append(c)
         print(presult)
