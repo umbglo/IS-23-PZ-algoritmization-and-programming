@@ -5,7 +5,7 @@ m = int(input('введите количество строк: '))
 
 matrix = []
 
-matrix = [ [0]*m for i in range(n) ] #создание матрицы
+matrix = [ [0] * m for i in range(n) ] #создание матрицы
 
 for i in range(n): #заполнение столбцов матрицы
     for j in range(m): #заполнение строк матрицы
