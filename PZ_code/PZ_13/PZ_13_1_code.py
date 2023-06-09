@@ -1,7 +1,9 @@
 #В матрице найти максимальный положительный элемент, кратный 4.
 
-n = int(input('введите количество столбцов: '))
-m = int(input('введите количество строк: '))
+import random
+
+n = random.randint(1, 5)
+m = random.randint(1, 5)
 
 matrix = []
 
@@ -9,12 +11,21 @@ matrix = [[0] * m for i in range(n)] #создание матрицы
 
 for i in range(n): #заполнение столбцов матрицы
     for j in range(m): #заполнение строк матрицы
-        matrix[i][j] = int(input('введите значения матрицы '))
+        matrix[i][j] = random.randint(-100, 100)
 
-result = list(map(lambda x: max(x), matrix)) #максимальные значения в каждой строке
+print(matrix)
+
+result = list(set(map(lambda x: max(x), matrix))) #максимальные значения в каждой строке
 
 presult = []
 for c in result: #фильтрация по кратности на 4 и положительности
     if c % 4 == 0 and c > 0:
         presult.append(c)
-        print(presult)
+
+print(presult)
+
+eresult = []
+for eresult in presult:
+    print(max(presult))
+if eresult == []:
+    print('числа, удовлетворяющие условию, отсутствуют')
