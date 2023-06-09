@@ -21,11 +21,9 @@ presult = []
 for c in result: #фильтрация по кратности на 4 и положительности
     if c % 4 == 0 and c > 0:
         presult.append(c)
+        result.pop(0)
 
-print(presult)
-
-eresult = []
-for eresult in presult:
+if presult == []:
+    print('нет элементов, удовлетворяющих условию задачи')
+else:
     print(max(presult))
-if eresult == []:
-    print('числа, удовлетворяющие условию, отсутствуют')
